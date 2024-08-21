@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <!--Schedule-->
+    <h1>Tables</h1>
+    <div class="wrapper-1">
+    <h2>Semester &#8545; Schedule</h2>
+    <table class="t-1" aria-label="Semester 2 Course Schedule">
+        <caption>Fig: Semester 2 Course Schedule</caption>
+        <thead>
+            <tr class="blue">    
+                <th id="course" scope="col">Course</th>
+                <th id="time" colspan="2" scope="col">Time</th>
+                <th id="room" scope="col">Room</th>
+                <th id="day" scope="col">Day</th>
+             </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th id="english" scope="row" rowspan="2">English &#8545;</th>
+                <td headers="english time">9:00</td>
+                <td headers="english time">11:00</td>
+                <td headers="english room">L2201</td>
+                <td headers="english day">Monday</td>
+            </tr>
+            <tr>
+                <td headers="english time">9:00</td>
+                <td headers="english time">11:00</td>
+                <td headers="english room">L2201</td>
+                <td headers="english day">Wednesday</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th id="geography" scope="row">Geography</th>
+                <td headers="geography time">11:00</td>
+                <td headers="geography time">12:45</td>
+                <td headers="geography room">G107</td>
+                <td headers="geography day">Tuesday</td>
+            </tr>
+            <tr>
+                <th id="biology" scope="row">Biology</th>
+                <td headers="biology time">9:00</td>
+                <td headers="biology time">11:00</td>
+                <td headers="biology room">B302</td>
+                <td headers="biology day" class="last">Friday</td>
+            </tr> 
+        </tfoot>
+    </table>
+    </div>
+    <!--Comparison-->
+    <div class="wrapper-2">
+        <h2>Product Comparison Chart</h2>
+        <table class="t-2" aria-level="product comparison chart">
+            <caption>Fig: Comparison of the features between the products.</caption>
+            <thead>
+                <tr>
+                <th>
+                    <!--none-->
+                </th>
+                <th id="product-a" scope="col">
+                    Product A
+                </th>
+                <th id="product-b" scope="col">
+                    Product B
+                </th>
+                <th id="product-c" scope="col">
+                    Product C
+                </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th id="durability" scope="row">Durability</th>
+                    <td headers="product-a durability">10/10</td>
+                    <td headers="product-b durability">5/10</td>
+                    <td headers="product-c durability">7/10</td>
+                </tr>
+                <tr>
+                    <th id="design" scope="row">Design</th>
+                    <td headers="product-a design">3/10</td>
+                    <td headers="product-b design">8/10</td>
+                    <td headers="product-c design">7/10</td>
+                </tr>
+                <tr>
+                    <th id="usability" scope="row">Usability</th>
+                    <td headers="product-a usability">7/10</td>
+                    <td headers="product-b usability">10/10</td>
+                    <td headers="product-c usability">5/10</td>
+                </tr>                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th id="price" scope="row">Price</th>
+                    <td headers="product-a price">9/10</td>
+                    <td headers="product-b price">7/10</td>
+                    <td headers="product-c price">3/10</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+   <!--Info chart-->
+    <div class="wrapper-3">
+        <h2>Japanese Miso Soup Infomation</h2>
+        <table class="t-3" aria-label="miso soup infomation">
+            <caption>Home-cooked Soup</caption>
+            <thead>
+                <tr>
+                    <th></th><!--none-->
+                    <th id="name" scope="col">Name</th>
+                    <th id="ingredients" scope="col">Ingredients</th>
+                    <th id="region" scope="col">Often eaten in</th>
+                    <th id="description" scope="col">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th id="tofu" scope="row"><img src="./img/tofu-wakame.jpg"></th>
+                    <td headers="tofu name" class="name">To-fu and Wakame Misou Soup</td>
+                    <td headers="tofu ingredients">
+                        <ul>
+                            <li>To-fu</li>
+                            <li>Wakame Seaweed</li>
+                            <li>Dashi</li>
+                            <li>Miso</li>
+                            <li>Fish stock</li>
+                        </ul>
+                    </td>
+                    <td headers="tofu region">Kanto (around Tokyo)</td>
+                    <td headers="tofu description">The most common Miso soup in Kanto.</td>
+                </tr>
+                <tr>
+                    <th id="nameko" scope="row"><img src="./img/nameko.jpeg"></th>
+                    <td headers="nameko name"  class="name">Nameko-jiru</td>
+                    <td headers="nameko ingredients">
+                        <ul>
+                            <li>Nameko mushroom</li>
+                            <li>To-fu</li>
+                            <li>Dashi</li>
+                            <li>Miso</li>
+                            <li>Fish stock</li>
+                        </ul>
+                    </td>
+                    <td headers="nameko region">Kanto</td>
+                    <td headers="description">Nameko mushroom has slimy texture.</td>
+                </tr>
+                <tr>
+                    <th id="shijimi" scope="row"><img src="./img/shijimi.jpeg"></th>
+                    <td headers="shijimi name"  class="name">Shijimi-jiru</td>
+                    <td headers="shijimi ingredients">
+                        <ul>
+                            <li>Shijimi</li>
+                            <li>Dashi</li>
+                            <li>Miso</li>
+                            <li>Fish stock</li>
+                        </ul>
+                    </td>
+                    <td headers="shijimi region">Kanto</td>
+                    <td headers="shijimi description">Often eaten for Recovery from fatigue and hangover.</td>
+                </tr>
+                <tr>
+                    <th scope="row"><img src="./img/kentsinjiuru.jpg" alt="kentsinjiuru"></th>
+                    <td headers="kentsinjiuru name"  class="name">Kentin-jiru</td>
+                    <td headers="kentsinjiuru ingredients">
+                        <ul>
+                            <li>Pork</li>
+                            <li>Onion</li>
+                            <li>Carrot</li>
+                            <li>Satoimo</li>
+                            <li>Gobou</li>
+                            <li>Dashi</li>
+                            <li>Miso</li>
+                            <li>Fish stock</li>
+                        </ul>
+                    </td>
+                    <td headers="kentsinjiuru region">Kanagawa, Kanto</td>
+                    <td headers="kentsinjiuru description">Firstly tir-fry ingredients and stew with Miso.</td>
+                </tr>
+                <tr>
+                    <th id="natto" scope="row"><img src="./img/nattou.jpg"></th>
+                    <td headers="natto name"  class="name">Miso Soup with Natto</td>
+                    <td headers="natto ingredients">
+                        <ul>
+                            <li>Natto</li>
+                            <li>negi</li>
+                            <li>To-fu</li>
+                            <li>Abura-age</li>
+                            <li>Dashi</li>
+                            <li>Miso</li>
+                            <li>Fish stock</li>
+                        </ul>
+                    </td>
+                    <td headers="natto region">Yamagata prefecture</td>
+                    <td headers="natto description">Natto is fermented soybeans which is sticky and has unique smell.</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th id="sanma" scope="row"><img src="./img/sanma.jpg"></th>
+                    <td headers="sanma name"  class="name">Miso soup with Sanma</td>
+                    <td headers="sanma ingredients">
+                        <ul>
+                            <li>Pacific Saury Fish Cake</li>
+                            <li>To-fu</li>
+                            <li>Negi</li>
+                        </ul>
+                    </td>
+                    <td headers="sanma region">To-hoku (northern part of Japan)</td>
+                    <td headers="sanma description"> Sanma is commonly eaten by grilled but it is eaten as a fish cake in northern part of Japan.</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</body>
+</html>
