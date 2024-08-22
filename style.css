@@ -80,6 +80,7 @@ table.t-1{
 .t-1 thead th {
     background-color: #2c79ff; /* Blue background */
     color: #fff;
+    overflow: hidden;
 }
 
 .table-radius {
